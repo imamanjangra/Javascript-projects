@@ -1,44 +1,53 @@
-<section style="margin-bottom: 50px;">
-  <h2>🔢 Calculator</h2>
-  <img src="https://via.placeholder.com/800x400?text=Calculator+Preview" 
-       alt="Calculator Preview" 
-       style="width:100%; max-width:800px; border-radius:12px; margin:15px 0;">
-  
-  <p>
-    The <b>Calculator App</b> is a clean, lightweight, and fully responsive web-based calculator built using 
+<section style="
+  margin: 30px auto; 
+  padding: 20px; 
+  max-width: 800px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  background: #fff;
+">
+  <h2 style="
+    color: #222; 
+    text-align: center; 
+    border-bottom: 2px solid #4CAF50; 
+    padding-bottom: 6px; 
+    margin-bottom: 15px;
+  ">🔢 Calculator</h2>
+
+  <p style="font-size: 15px; line-height: 1.6; color: #333;">
+    The <b>Calculator App</b> is a simple, lightweight, and fully responsive web-based calculator built using 
     <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. 
-    It was created as a practice project to strengthen my skills in <b>DOM manipulation</b>, 
-    <b>event handling</b>, and <b>responsive UI design</b>.
+    It was designed for clean UI and smooth functionality.
   </p>
   
-  <h3>✨ Features</h3>
-  <ul>
-    <li>Perform basic arithmetic operations: addition, subtraction, multiplication, and division.</li>
-    <li>Responsive layout that works seamlessly on desktop and mobile screens.</li>
-    <li>Clear display with easy-to-use button layout for better user experience.</li>
-    <li>Lightweight and fast loading with no external frameworks.</li>
-    <li>Practical for learning <b>JavaScript logic</b> and real-time DOM updates.</li>
+  <h3 style="color: #4CAF50; margin-top: 15px;">✨ Features</h3>
+  <ul style="color: #444; line-height: 1.6;">
+    <li>Basic arithmetic: addition, subtraction, multiplication, and division.</li>
+    <li>Responsive layout for both desktop and mobile.</li>
+    <li>Simple button-based interface for better usability.</li>
   </ul>
 
-  <h3>🛠️ Technologies Used</h3>
-  <ul>
-    <li><b>HTML5</b> – For structure and semantic markup.</li>
-    <li><b>CSS3</b> – For styling, layout design, and responsiveness.</li>
-    <li><b>JavaScript</b> – For functionality, user interaction, and calculations.</li>
+  <h3 style="color: #4CAF50; margin-top: 15px;">🛠️ Technologies Used</h3>
+  <ul style="color: #444; line-height: 1.6;">
+    <li><b>HTML5</b></li>
+    <li><b>CSS3</b></li>
+    <li><b>JavaScript</b></li>
   </ul>
-  
-  <h3>🚀 Project Goals</h3>
-  <p>
-    This project was built as part of my journey to practice building functional web applications 
-    from scratch. It helped me focus on writing clean, efficient JavaScript code and designing 
-    a simple, user-friendly interface without using any libraries or frameworks.
-  </p>
 
-  <p>
-    <b>🔗 Live Demo:</b> 
-    <a href="https://calculator-six-lemon-41.vercel.app/" target="_blank">
-      Click here to try the Calculator App
+  <p style="text-align: center; margin-top: 20px;">
+    <a href="https://calculator-six-lemon-41.vercel.app/" 
+       target="_blank" 
+       style="
+         background: #4CAF50; 
+         color: #fff; 
+         padding: 8px 15px; 
+         text-decoration: none; 
+         border-radius: 5px; 
+         font-weight: 500;
+       ">
+      🔗 Live Demo
     </a>
   </p>
 </section>
-<hr>
+
+<hr style="border: 1px solid #ddd; margin: 30px 0;">
