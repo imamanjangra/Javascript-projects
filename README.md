@@ -1,6 +1,6 @@
 <h1 align="center">🚀 My Mini Projects</h1>
 <p align="center">
-  A collection of small web projects I built while learning <b>HTML, CSS, and JavaScript</b>.
+  A collection of small web projects I built while learning <b>HTML, CSS, Tailwind CSS and JavaScript</b>.
   <br>
   Each project is deployed on <b>Vercel</b> for easy access.
 </p>
@@ -59,11 +59,13 @@ An interactive quiz app with multiple-choice questions.
 
 <h2>✊✋✌️ Rock-Paper-Scissors</h2>
 <p>
-A simple game to play Rock-Paper-Scissors against the computer.
+A fun and interactive game of Rock-Paper-Scissors with multiple modes.
 </p>
 <ul>
-  <li>Random computer selection with instant results.</li>
-  <li>Focused on <b>game logic</b> and condition handling.</li>
+  <li><b>Endless Mode:</b> Play without limits and track scores as long as you want.</li>
+  <li><b>Best of 3:</b> The first to win 2 rounds is the champion.</li>
+  <li><b>Best of 5:</b> The first to win 3 rounds wins the match.</li>
+  <li>Practiced <b>game logic</b>, <b>condition handling</b>, and <b>dynamic UI updates</b>.</li>
 </ul>
 <p><a href="https://rockpaperscissors-topaz.vercel.app/" target="_blank">🔗 Live Demo</a></p>
 
