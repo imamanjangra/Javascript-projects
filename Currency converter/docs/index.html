@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./output.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+     <!-- npm run build -->
+    <title>Currency Converter</title>
+</head>
+<body class="bg-white  font-[Poppins]">
+
+<!-- Nav bar -->
+ <div class="">
+     <div class="bg-[#ffee00] h-15 w-full flex items-center  shadow-lg ">
+       <button class="cursor-pointer hover:scale-105 
+                        active:scale-95 transition-all duration-200 ease-in-out"><a href="index.html"> <img class="h-12 ml-5" src="https://i.ibb.co/Gfxs9vQF/Adobe-Express-file.png" alt="Logo"></a></button>
+        <div class="ml-auto mr-3 md:mr-10 cursor-pointer  ">
+            <i class="fa-solid fa-circle-half-stroke text-4xl mr-5 md:mr-10 dark_btn text-black hover:scale-110 
+                        active:scale-95 transition-all duration-200 ease-in-out"></i>
+          <button class="cursor-pointer hover:scale-110 
+                        active:scale-95 transition-all duration-200 ease-in-out"><a href="https://github.com/imamanjangra/Currency-converter"><i class="fa-brands fa-github text-4xl text-black"></i></a></button>
+        </div>  
+    </div>
+ </div>
+<div>
+<!-- main    -->
+ <form >
+    <div class="main_box mx-auto mt-20 flex justify-center items-center border-white  h-auto rounded-2xl shadow-2xl w-82 md:w-90 bg-white  px-6 pb-3" >
+        <div class="mt-3">
+            <div class="">
+            <img class=" mx-auto h-35 " src="https://play-lh.googleusercontent.com/R8ViqgMuNao_VA0RTprqMfGNFfGDReIc4G5Vba9ZTfmvIaBJotX-tfcvtuF6r2Ftlw=s200" alt="Logo"> 
+            <p class="text-2xl mt-5 mx-auto ">Currency Converter</p>
+            </div>
+             <input class="text-2xl mt-5  border-1 w-full h-10 p-3 amount_input rounded-xl hover:scale-105 
+                        active:scale-95 transition-all duration-200 ease-in-out " type="number" placeholder="Enter amount " value="1">
+
+             <div class="flex  justify-between items-center mt-3">
+                <div>
+                    <p class="text-2xl">From</p>
+                    <div class="border-1 w-auto h-13 flex justify-center items-center rounded-xl hover:scale-105 
+                        active:scale-95 transition-all duration-200 ease-in-out  ">
+                        <img class="h-7 ml-3 img1" src="https://flagsapi.com/US/flat/64.png" alt="">
+                        <select name="option" class="otn1 cursor-pointer">
+                            <option value="IN" id="INR"  class="option text-black">INR</option>
+                            <option value="AL" id="ALL" class="option text-black" >ALL</option>
+                            <option value="BB" id="BBD" class="option text-black" >BBD</option>
+                            <option value="CA" id="CAD" class="option text-black" >CAD</option>
+                            <option value="MM" id="MMK" class="option text-black" >MMK</option>
+                            <option value="BO" id="BOB" class="option text-black" >BOB</option>
+                            <option value="BE" id="XOF" class="option text-black" >XOF</option>
+                            <option value="US" id="USD" selected class="option text-black" >USD</option>
+                            <option value="DZ" id="DZD" class="option text-black" >DZD</option>
+                            <option value="AE" id="AED" class="option text-black" >AED</option>
+                            <option value="PH" id="PHP" class="option text-black" >PHP</option>
+                            <option value="RU" id="RUB" class="option text-black" >RUB</option>
+                            <option value="SO" id="SOS" class="option text-black" >SOS</option>
+                            <option value="ZA" id="ZAR" class="option text-black" >ZAR</option>
+                            <option value="VN" id="VND" class="option text-black" >VND</option>
+                            <option value="JO" id="JOD" class="option text-black" >JOD</option>
+                            <option value="HU" id="HUF" class="option text-black" >HUF</option>
+                            <option value="GI" id="GIP" class="option text-black" >GIP</option>
+                            <option value="FK" id="FKP" class="option text-black" >FKP</option>
+                            <option value="DJ" id="DJF" class="option text-black" >DJF</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left text-3xl mt-6 mx-2 swich cursor-pointer" ></i>
+                <div>
+                    <p class="text-2xl">To</p>
+                    <div class="border-1 w-auto h-13 flex justify-center rounded-xl items-center hover:scale-105 
+                        active:scale-95 transition-all duration-200 ease-in-out">
+                        <img class="h-7 ml-3 img2 i1" src="https://flagsapi.com/IN/flat/64.png" alt="">
+                        <select name="option" class="otn2 cursor-pointer ">
+                            <option value="IN" selected id="INR" class="text-black">INR</option>
+                            <option value="AL" id="ALL" class="text-black">ALL</option>
+                            <option value="BB" id="BBD"class="text-black" >BBD</option>
+                            <option value="CA" id="CAD" class="text-black">CAD</option>
+                            <option value="MM" id="MMK" class="text-black">MMK</option>
+                            <option value="BO" id="BOB" class="text-black">BOB</option>
+                            <option value="BE" id="XOF" class="text-black">XOF</option>
+                            <option value="US" id="USD" class="text-black">USD</option>
+                            <option value="DZ" id="DZD" class="text-black">DZD</option>
+                            <option value="AE" id="AED" class="text-black">AED</option>
+                            <option value="PH" id="PHP" class="text-black">PHP</option>
+                            <option value="RU" id="RUB" class="text-black">RUB</option>
+                            <option value="SO" id="SOS" class="text-black">SOS</option>
+                            <option value="ZA" id="ZAR" class="text-black">ZAR</option>
+                            <option value="VN" id="VND" class="text-black">VND</option>
+                            <option value="JO" id="JOD" class="text-black">JOD</option>
+                            <option value="HU" id="HUF" class="text-black">HUF</option>
+                            <option value="GI" id="GIP" class="text-black">GIP</option>
+                            <option value="FK" id="FKP" class="text-black">FKP</option>
+                            <option value="DJ" id="DJF" class="text-black">DJF</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+           <div class="h-auto w-full mt-3 flex justify-center items-center text-1xl">
+                <p id="Answer" class="w-full max-w-xs break-words whitespace-normal overflow-x-auto text-center">
+                    1 USD = 87.50 INR
+                </p>
+            </div>
+
+
+
+             <div class="mt-3 mb-5 flex justify-center">
+                <button 
+                    type="submit" 
+                    class="submit_btn px-6 py-2 bg-[#ffee00] text-black text-2xl rounded-xl 
+                        transition-all duration-200 ease-in-out 
+                        hover:bg-[#ffc400] hover:scale-105 
+                        active:scale-95 cursor-pointer">
+                    Get Exchange Rate
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

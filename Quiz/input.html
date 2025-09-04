@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="input.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!-- input value -->
+    
+<div class="nav">
+     <div id="logo">Quiz</div>
+     <div id="github"><a id="creat_link1" href="https://github.com/imamanjangra?tab=repositories"><i class="fa-brands fa-github"></i></a></div>
+     <div id="Box"><i class="fa-solid fa-circle-half-stroke"></i></div>
+ </div>
+
+    <div id="contaner_input">
+        <div id="c_t">
+            <span id="input_time">Time for each queston</span>
+            <span><input id="i_t" type="number" placeholder="Time"></span>
+        </div>
+        <div id="question_box">
+            <ol id="main_ol">
+                <li id="question_li">
+                    <div id="queston"><input class="input_q" id="q1" type="text" placeholder="Question"></div>
+                        <div id="option">
+                            <ol type="A" id="option_list">
+                                <li><input id="q1o1" class="same_o" type="text" placeholder="option"><i  class="fa-solid fa-trash-can s_btn "></i></li>
+                            </ol>
+                            <div id="q1_btn"><button type="button" id="btn_option_inc"><i class="fa-solid fa-plus btn_style"></i></button></div>
+                            <p>Answer</p>
+                            <input type="text" class = "same_o" id="a1" placeholder="Answer">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div><button type="button" id="btn_question_inc"><i class="fa-solid fa-plus btn_style"></i></button></div>
+            
+
+        <div id="btn_in_center">
+        <div id="btn_input"><button id="btn_i" type="submit">Finish</button></div>
+        </div>
+    </div>
+
+
+    <!-- quize start -->
+      <div id="quiz_box">
+        <div id="nav_box">
+            <div id="quiz_logo">Quiz</div>
+            <div id="time_left">Time left<div id="time"></div></div>
+        </div>
+        <div id="main_box">
+            <ol id="ol_q">
+                <div id="question_quiz"></div>
+                <div id="option">
+                    <ol type="A" id="op_quiz">
+                      
+                    </ol>
+                </div>
+            </ol>
+        </div>
+        <div id="footer_box">
+            <div id="left_q"></div>
+        </div>
+    </div>
+</body>
+
+<script src="input.js"></script>
+</html>

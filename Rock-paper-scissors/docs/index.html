@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-fuchsia-900 text-white">
+
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="h-10 w-10 bg-white/10 rounded-xl flex items-center justify-center text-xl">🎮</div>
+      <h1 class="text-2xl font-bold">Rock • Paper • Scissors</h1>
+    </div>
+
+    <!-- Mode selector -->
+    <select id="mode" class="bg-white/10 rounded-lg px-3 py-2 text-sm font-bold text-black ">
+      <option value="0">Endless</option>
+      <option  value="3">Best of 3</option>
+      <option  value="5">Best of 5</option>
+    </select>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <!-- Arena -->
+    <section class="lg:col-span-2">
+      <div class="rounded-3xl bg-white/5 border border-white/10 p-6">
+
+        <!-- Scoreboard -->
+        <div class="flex justify-between items-center border-b border-white/10 pb-4 mb-6">
+          <div class="flex items-center gap-2">
+            <span class="uppercase text-xs">You</span>
+            <span id="player-score" class="text-2xl font-bold score_you">0</span>
+          </div>
+
+          <span id="game-mode" class="text-sm text-slate-300 game_mode">Endless</span>
+
+          <div class="flex items-center gap-2">
+            <span id="cpu-score" class="text-2xl font-bold score_cpu">0</span>
+            <span class="uppercase text-xs">CPU</span>
+          </div>
+        </div>
+
+        <!-- Choice Display Boxes -->
+        <div class="flex justify-between mb-6 gap-4 h-30 md:h-40">
+          <!-- Player Choice -->
+          <div class="flex-1  bg-white/10 border border-white/20 rounded-2xl p-6 flex flex-col items-center justify-center">
+            
+            <span class="mt-2 text-white/80 font-medium your">Your Choice</span>
+          </div>
+
+            <div class="flex-1 flex items-center justify-center">
+                <span class="text-white/90 text-xl font-bold result">Result</span>
+            </div>
+
+
+          <!-- CPU Choice -->
+          <div class="flex-1 bg-white/10 border border-white/20 rounded-2xl p-6 flex flex-col items-center justify-center">
+           
+            <span class="mt-2 text-white/80 font-medium cpu">CPU Choice</span>
+          </div>
+        </div>
+
+        <!-- Result Message -->
+        
+
+        <!-- Action Buttons -->
+        <div class="flex justify-center gap-4 mb-6">
+          <button value="clear" class="btn_all  clear px-4 py-2 bg-red-600 hover:bg-red-500 rounded-lg text-sm font-medium transition">
+            Clear
+          </button>
+          <button value="again" class="btn_all play_again px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-sm font-medium transition">
+            Play Again
+          </button>
+        </div>
+
+        <!-- Choices -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <button data-choice="rock" value="1" class="btn_all try choice-btn py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition flex flex-col items-center">
+            <span class="text-3xl">✊</span>
+            <span class="font-medium">Rock</span>
+          </button>
+
+          <button data-choice="paper" value="2" class="btn_all try choice-btn py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition flex flex-col items-center">
+            <span class="text-3xl">✋</span>
+            <span class="font-medium">Paper</span>
+          </button>
+
+          <button data-choice="scissors" value="3" class="btn_all try choice-btn py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition flex flex-col items-center">
+            <span class="text-3xl">✌️</span>
+            <span class="font-medium">Scissors</span>
+          </button>
+        </div>
+        <div id="result-message" class="text-center text-2xl font-bold mb-6 text-white/90">
+          Make your move!
+        </div>
+      </div>
+    </section>
+    
+    <!-- History & Tips -->
+    <aside>
+      <div class="rounded-3xl bg-white/5 border border-white/10 p-4 mb-4">
+        <h2 class="text-lg font-semibold mb-2">Match History</h2>
+        <ul id="history" class="space-y-2 text-sm max-h-80 overflow-auto ul_his">
+          
+        </ul>
+      </div>
+
+      <div class="rounded-3xl bg-white/5 border border-white/10 p-4">
+        <h3 class="font-semibold mb-2">How to Play</h3>
+        <ol class="list-decimal list-inside text-sm space-y-1">
+          <li>Click Rock, Paper, or Scissors to choose.</li>
+          <li>Choose a mode from the dropdown.</li>
+          <li>Track your score and history here.</li>
+        </ol>
+      </div>
+    </aside>
+  </main>
+
+</body>
+<script src="script.js"></script>
+</html>

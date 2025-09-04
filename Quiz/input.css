@@ -1,0 +1,441 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:  "Dancing Script", cursive;
+}
+body{
+    display: flex;
+    flex-direction: column; 
+}
+@media(max-width: 700px) {
+    #contaner_input{
+        width: 60vw !important;
+        padding: 20px !important;
+    }
+    .input_q ,  .second_q{
+        height: 6vw !important;
+        width: 40vw !important;
+    }
+    .same_o{
+        height: 4vw !important;
+        width: 30vw !important;
+    }
+    #i_t{
+         height: 3vw !important;
+        width: 10vw !important;
+    }
+    #btn_input{
+        height: 6vw !important;
+        width: 20vw !important;
+    }
+    /* .btn_style{
+        border: none !important;
+        background-color: white !important;
+    } */
+
+}
+#contaner_input{
+    border-radius: 20px;
+    margin-top: 5vw;
+    padding: 10px;
+    height: auto;
+    width: 30vw;
+    box-shadow: 0 0.1px 10px black;
+}
+#option{
+    padding: 1vw;
+}
+#main_ol{
+    padding: 1vw;
+}
+.input_q{
+    font-size: clamp(1rem, 1vw, 2rem);
+    height: 2.5vw;
+    width: 25vw;
+}
+.same_sub_option{
+    margin-left: 1vw;
+}
+.same_o{
+    font-size: clamp(1rem, 1vw, 1rem);
+    margin-right: 5px;
+    height: 1.5vw;
+    width: 15vw;
+}
+.second_q{
+      font-size: clamp(1rem, 1vw, 2rem);
+     height: 2.5vw;
+     width: 25vw;
+     margin-bottom: 1vw;
+}
+.same_p{
+    margin: 1vw;
+}
+.q_delete{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    height: 2vw;
+    width: 2vw;
+
+}
+
+#input_time{
+    line-height: 1.5vw;
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    /* color: ; */
+    font-family:  "Dancing Script", cursive;;
+}
+#c_t{
+    align-items: center;
+    border-top: 2px solid black;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+   padding-top: 1vw;
+}
+#i_t{
+
+    font-size: clamp(1rem, 1vw, 2rem);
+    margin-left: 0.5vw;
+    height: 4vh;
+    width: 4vw;
+}
+#btn_i{
+     font-size: clamp(1rem, 1vw, 1rem);
+    background-color: white;
+    border: none;
+}
+#btn_input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 2vw;
+    width: 6vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 1vw;
+
+}
+#btn_in_center{
+    display: flex;
+    justify-content: center;
+}
+
+#question_box{
+    height: auto;
+    width: auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#btn_option_inc{
+    border: none;
+    font-size: clamp(0.5rem, 1vw, 0.5rem);
+    text-align: center;
+    background-color: white;
+    height: 1.4vw;
+    width: 1.5vw;
+}
+#btn_question_inc{
+    border: none;
+}
+.btn_style{
+   align-items: center;
+    font-size: clamp(1rem, 1vw, 1rem);
+    text-align: center;
+    background-color: white;
+    height: 1vw;
+    width: 1vw;
+    border: none;
+}
+/* quiz game */
+
+body{
+    /* margin-top: 6vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quiz_box{
+    border-radius: 10px;
+    display: none;
+    height: autovh;
+    width: 25vw;
+    /* border: 2px solid black; */
+    margin-top: 5vw;
+    box-shadow: 0 1px 10px black;
+}
+
+#nav_box{
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+    height: 3vw;
+    width: 25vw;
+}
+#quiz_logo{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: clamp(1rem, 3vw, 3rem);
+    animation: pop 0.6s ease;
+}
+#time_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 1.1vw, 2rem);
+    position: relative;
+    left: 10vw;
+    height: 2.3vw;
+    /* border: 2px solid black; */
+    width: 8vw;
+    border-radius: 10px;
+   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+
+}
+#time{
+    font-size: clamp(1rem, 1.3vw, 2rem);
+    margin-left: 0.5vw;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 1.8vw;
+    width: 2vw;
+    text-align: center;
+    padding-top: 2px;
+}
+
+#footer_box {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    height: 60px;          
+    width: 100%;           
+    padding: 10px;         
+    box-sizing: border-box; 
+    background-color: white;  
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#left_q {
+    text-align: center;
+    height: auto;         
+    width: auto;          
+    padding: 5px 15px;    
+    font-size: 1em;        
+    background: #fff;     
+    border-radius: 20px;   
+    box-shadow: 0 5px 7px rgba(0,0,0,0.3); 
+}
+#next{
+     text-align: center;
+    height: 2vw;
+    width: 5vw;
+    border: 2px solid black;
+}
+
+/* .dark_mode {
+  background-color: black;
+  color: #DDDDDD;
+  
+}
+
+.dark_mode #contaner_input{
+    border: 2px solid #DDDDDD;
+}
+ */
+body.dark_mode {
+  background-color: #242526  !important;
+  color: #DDDDDD;
+}
+body.dark_mode #footer_box{
+    background-color: #242526;
+
+}
+
+
+body.dark_mode #left_q,
+body.dark_mode input,
+body.dark_mode button,
+body.dark_mode textarea {
+     transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #222;
+  color: #DDDDDD;
+  border: 1px solid #DDDDDD;
+}
+
+body.dark_mode #question_box{
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 2px solid #DDDDDD;
+}
+body.dark_mode .btn_style{
+    background-color: #242526;
+ 
+}
+
+
+body.dark_mode #btn_i{
+    background-color: #242526;
+
+}
+
+body.dark_mode #btn_input , #left_q{
+    
+    box-shadow: 0 0.1px 10px #DDDDDD;
+   
+}
+
+body.dark_mode #color_change{
+    color: white;
+}
+
+body.dark_mode #quiz_box{
+    border: none;
+     box-shadow: 0 0.1px 10px rgba(221, 221, 221, 0.7);
+}
+
+
+body.dark_mode #contaner_input,
+
+body.dark_mode #quiz_box,
+body.dark_mode #nav_box,
+body.dark_mode #footer_box,
+body.dark_mode #time_left,
+body.dark_mode #time,
+body.dark_mode #left_q,
+body.dark_mode #next {
+  border: 2px solid #DDDDDD;
+}
+
+body.dark_mode .fa-trash-can {
+    color: #DDDDDD;
+}
+
+#btn_question_inc{
+    margin-top: 0.5vw;
+}
+body.dark_mode #contaner_input{
+     box-shadow: 0 1px 10px #DDDDDD;
+}
+
+#question_quiz{
+    margin-top: 1vw;
+}
+
+#op_quiz{
+    margin-left: 1vw;
+}
+
+
+.op_div{
+   display: flex;
+    justify-content: space-between; /* pushes icon to right */
+    align-items: center;
+    padding: 0.5vw 1vw;
+    min-height: 3vw;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 1vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    position: relative;
+    gap: 1vw;
+}
+/* 
+.radio_btn{
+      font-size: clamp(1rem, 1.3vw, 2rem);
+      margin-left: 2vw;
+    
+} */
+
+.ans_s{
+    margin-top: 0.1vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+#ans_text{
+    margin-left: 1vw;
+}
+#inc_btn{
+    margin-left: 1vw;
+    margin-top: 0.4vw;
+}
+
+#color_change{
+     font-size: clamp(1rem, 1.3vw, 2rem);
+    text-align: center;
+    background-color: rgb(173, 230, 230);
+    border-radius: 10px;
+    border: none;
+    
+}
+
+@media(max-width: 1500px) {
+    #quiz_box{
+        width: 40vw;
+       
+
+    }
+    #nav_box{
+        width: 40vw;
+        height: auto;
+    }
+    #time_left{
+        font-size: clamp(0.7rem, 0.1vw, 0.1rem);
+        margin-left: 10vw;
+        width: 10vw;
+        height: auto;
+    }
+    #question_quiz{
+         font-size: clamp(0.5em, 0.1vw, 0.1rem);
+         color: blue;
+    }
+    #op_quiz{
+        margin-left: 2vw;
+    }
+}
+
+@media(max-width: 600px) {
+    #quiz_box{
+        width: 70vw;
+    }
+    #nav_box{
+        width: 70vw;
+        height: 10vw;
+    }
+    #quiz_logo{
+        margin-left: 2vw;
+    }
+    #time_left{
+        font-size: clamp(0.6rem, 0.1vw, 0.1rem);
+        margin-left: 25vw;
+        width: 20vw;
+        height: 7vw;
+    }
+    #time{
+        height: 5vw;
+        width: 6vw;
+    }
+     #op_quiz{
+        margin-left: 4vw;
+        font-size: clamp(0.7rem, 0.1vw, 0.1rem);
+    }
+    #color_change{
+        height: auto;
+    }
+}
+.correct_i {
+     font-size: 1.2vw;
+}
+

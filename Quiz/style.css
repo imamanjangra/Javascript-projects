@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* Bubble Canvas Background */
+#bubble-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps bubbles behind everything */
+    background: transparent; /* Transparent to match your theme */
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  background-color: white;
+  color : black;
+}
+#Box {
+    border: none;
+    font-size: clamp(1rem, 2.2vw, 4rem);    
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+/* css */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 6vw, 1rem);    
+    height: 10vh;
+    width: 100%;
+    /* border: 2px solid black; */
+   box-shadow: 0 1px 10px black;
+  
+}
+
+#logo{
+    text-align: center;
+    margin: 1vw;
+  font-family: 'Luckiest Guy', cursive;
+    font-size: clamp(1rem, 3vw, 4rem);
+    animation: pop 0.6s ease;
+}
+#github{
+    font-size: clamp(1rem, 2.2vw, 5rem);   
+    margin-left: 70vw;
+    margin-top: 1.2vw;
+}
+#Box{
+    margin-top: 1.2vw;
+    margin-left: 8vw;
+}
+
+
+#main{
+    margin-top: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+#info{
+    height: 10vw;
+    width: 30vw;
+}
+@media(max-width: 600px) {
+  #img_box {
+    margin-left: 25vw;
+  }
+  #info {
+    height: 15vw;
+    width: 40vw;
+  }
+  #main {
+    margin-left: 10vw;
+    justify-content: start;
+  }
+  #github {
+    margin-left: 55vw;
+  }
+
+  /* yaha btn ka size badha do */
+  #btn {
+    height: 6vw !important;
+    width: 15vw !important;
+  }
+
+  #creat {
+    font-size: clamp(0.5rem, 4vw, 2rem) !important;
+  }
+}
+
+
+#h{
+    font-size: clamp(1rem, 2.5vw, 3rem);
+ font-family:  "Dancing Script", cursive;; 
+}
+#para{
+  
+    font-size: clamp(1rem, 1.2vw, 2rem);
+   
+    font-family:  "Dancing Script", cursive;;
+}
+
+#btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 2vw;
+    width: 6vw;
+    border-radius: 15px;
+    margin-top: 1vw;
+    box-shadow: 0 0.2px 8px black;
+
+}
+#creat{
+    text-align: center;
+    font-size: clamp(0.1rem, 2vw, 1.5rem);
+    /* background-color: white; */
+    border: none;
+}
+#creat_link1 , #creat_link2{
+    color: black;
+    text-decoration: none;
+}
+
+/*  dark and light mode button  */
+
+
+body.dark_mode {
+  background-color: #242526;
+  color: #DDDDDD;
+}
+
+.dark_mode #creat_link1 ,
+.dark_mode #creat_link2 {
+  color: #DDDDDD;
+}
+
+.dark_mode .nav, 
+.dark_mode #btn {
+  box-shadow: 0 1px 10px #DDDDDD;
+}
+

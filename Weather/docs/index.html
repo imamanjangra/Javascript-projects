@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-blue-700 to-blue-900 min-h-screen flex items-center justify-center p-6">
+
+  <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 w-auto  max-w-md text-white">
+    <!-- Header -->
+    <header class="text-center mb-6">
+      <h1 class="text-3xl font-bold tracking-wide">Weather App</h1>
+      <p class="text-sm text-blue-200">Check the weather in your city</p>
+    </header>
+
+    <!-- Search Box -->
+    <!-- Search Box -->
+<div class="flex gap-2 mb-6 w-full max-w-full">
+  <input 
+    type="text" 
+    placeholder="Enter city name..." 
+    class="serch flex-1 px-4 py-2 rounded-lg bg-white/20 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-300"
+  >
+  <button type="submit" class="serch_btn px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm">
+    Search
+  </button>
+</div>
+
+
+    <!-- Weather Display Box -->
+    <section class="text-center">
+      <div class="mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/1116/1116453.png" alt="Weather Icon" class="w-20 mx-auto">
+      </div>
+      <h2 class="text-4xl font-bold mb-2 temp_c">25°C</h2>
+      <p class="text-lg wether">Sunny</p>
+      <p class="text-sm text-blue-200 loc">Panipat, India</p>
+    </section>
+
+    <!-- Extra Details -->
+    <section class="grid grid-cols-2 gap-4 mt-6">
+      <div class="bg-white/20 rounded-lg p-4 text-center">
+        <p class="text-sm text-blue-200">Humidity</p>
+        <p class="text-xl font-semibold hum">60%</p>
+      </div>
+      <div class="bg-white/20 rounded-lg p-4 text-center">
+        <p class="text-sm text-blue-200">Wind</p>
+        <p class="text-xl font-semibold s">10 km/h</p>
+      </div>
+    </section>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
