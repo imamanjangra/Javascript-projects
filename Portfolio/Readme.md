@@ -1,19 +1,20 @@
 <section class="mb-12">
-  <h2 class="text-2xl font-bold mb-4 border-b-4 border-blue-500 inline-block pb-1">
-    💱 Currency Converter
+  <h2 class="text-2xl font-bold mb-4 border-b-4 border-purple-500 inline-block pb-1">
+    🖥️ Portfolio Website
   </h2>
   <p class="mb-4 text-gray-700">
-    The <b>Currency Converter App</b> is a sleek and user-friendly tool that lets you 
-    quickly convert between different currencies using live exchange rates. 
-    It is built using <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b>, and <b>JavaScript</b>.
+    The <b>Portfolio Website</b> is a personal showcase of my projects, skills, and achievements. 
+    It’s built using <b>HTML</b>, <b>CSS</b>, <b>Tailwind CSS</b>, and <b>JavaScript</b> to deliver 
+    a clean, professional, and responsive design. 
+    This project demonstrates my ability to create modern, visually appealing web layouts.
   </p>
   
   <h3 class="text-xl font-semibold mb-2">✨ Features</h3>
   <ul class="list-disc list-inside mb-4 text-gray-700">
-    <li>Real-time currency conversion with accurate exchange rates.</li>
-    <li>Minimalistic design with Tailwind CSS for a modern look.</li>
-    <li>Fully responsive layout for both desktop and mobile users.</li>
-    <li>Instant conversion results with clear interface.</li>
+    <li>Fully responsive design optimized for desktop, tablet, and mobile devices.</li>
+    <li>Showcases my skills, experience, and featured projects.</li>
+    <li>Easy-to-navigate interface with clear sections and smooth scrolling.</li>
+    <li>Built with reusable components and styled using Tailwind CSS.</li>
   </ul>
 
   <h3 class="text-xl font-semibold mb-2">🛠️ Technologies Used</h3>
@@ -22,14 +23,13 @@
     <li><b>CSS3</b></li>
     <li><b>Tailwind CSS</b></li>
     <li><b>JavaScript</b></li>
-    <li><b>Live Exchange Rate API</b></li>
   </ul>
 
   <p class="text-gray-800">
     <b>🔗 Live Demo:</b> 
-    <a href="https://currencyconverter-three-lilac.vercel.app/" target="_blank" 
-       class="text-blue-600 hover:underline">
-      Click here to try the Currency Converter App
+    <a href="https://portfolio-wine-three-ezha103xgd.vercel.app/" target="_blank" 
+       class="text-purple-600 hover:underline">
+      Visit my Portfolio Website
     </a>
   </p>
 </section>
