@@ -17,6 +17,7 @@
   <ul style="color: #555; line-height: 1.8; padding-left: 20px;">
     <li><b>HTML5</b></li>
     <li><b>CSS3</b></li>
+    <li><b>Tailwind CSS</b></li>
     <li><b>JavaScript</b></li>
     <li><b>API for Live Exchange Rates</b></li>
   </ul>
