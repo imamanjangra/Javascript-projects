@@ -37,17 +37,16 @@
       height: 12px;
       transition: width 1s ease;
     }
-  </style>
+
+</style>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen px-4">
 
-  <!-- Heading -->
   <div class="text-center mb-10">
     <h1 class="text-5xl font-extrabold tracking-wide text-cyan-400 drop-shadow-lg">GitHub Profile Viewer</h1>
     <p class="text-gray-300 mt-3 text-lg">Find any GitHub user & explore their top repositories 🚀</p>
   </div>
 
-  <!-- Search Section -->
   <div class="flex mb-10 w-full max-w-md">
     <form class="flex w-full">
       <input 
@@ -64,10 +63,8 @@
     </form>
   </div>
 
-  <!-- Profile + Extra Features Container -->
   <div id="profile-container" class="hidden w-[95%] max-w-5xl flex flex-col md:flex-row gap-8">
     
-    <!-- Profile Card -->
     <div id="profile" class="glass p-8 rounded-3xl glow shadow-xl w-full md:w-1/2 text-center transition duration-500">
       <img id="avatar" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-cyan-400 shadow-md" src="" alt="User Avatar">
       <h2 id="name" class="text-2xl font-bold text-cyan-300"></h2>
@@ -84,11 +81,9 @@
       <ul id="repos" class="space-y-3"></ul>
     </div>
 
-    <!-- Extra Features -->
     <div id="extra-feature" class="glass p-8 rounded-3xl glow shadow-xl w-full md:w-1/2 flex flex-col justify-between space-y-6">
       <h3 class="text-xl font-semibold text-pink-300 mb-3">✨ Unique Features</h3>
 
-      <!-- Language Stats -->
       <div>
         <h4 class="text-lg font-semibold text-cyan-200 mb-2">📊 Language Usage</h4>
         <div class="space-y-2">
@@ -107,7 +102,6 @@
         </div>
       </div>
 
-      <!-- Random Dev Quote -->
       <div>
         <h4 class="text-lg font-semibold text-cyan-200 mb-2">💡 Dev Quote</h4>
         <p id="quote" class="italic text-gray-300">"Talk is cheap. Show me the code." – Linus Torvalds</p>
@@ -116,7 +110,6 @@
 
   </div>
 
-  <!-- Error -->
   <p id="error" class="text-red-500 mt-6 hidden text-lg font-semibold"></p>
 
   <script src="script.js"></script>
