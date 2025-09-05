@@ -43,6 +43,7 @@ getdata1();
 
 function data_feach (data)
 {
+  
   console.log(data.name)
   P_name.innerText = `${data.name}`
   avatar.src = `${data.avatar_url}`;
@@ -50,9 +51,7 @@ function data_feach (data)
   followers.innerText = `${data.followers}`
   following.innerText = `${data.following}`
   let repo_url = data.repos_url;
-  let lan_url = data.received_events_url;
-  console.log(lan_url);
-   
+
   let get_url = async ()=>{
     let request_repo = await fetch(repo_url);
     let repo_data = await request_repo.json();
@@ -61,14 +60,7 @@ function data_feach (data)
   }
   get_url();
   
-  let stars_url = async ()=>{
-    let request_star = await fetch(lan_url);
-    let repo_star = await request_star.json();
-    console.log(repo_star);
-    repo_data_use(repo_star)
-  }
-  stars_url();
-
+  
 }
 
 function repo_data_use (repo_data){
