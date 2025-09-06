@@ -20,12 +20,25 @@ submit_btn.addEventListener('click' , (e)=>{
   input_username(e);
 })
 
+username.addEventListener('keydown' , (e)=>{
+
+  if(e.key == "Entre"){
+    input_username(e);
+  }
+})
+
 function input_username(e){
   e.preventDefault();
   let id = username.value.replace(/\s+/g , "");
   console.log(id);
-  run_api(id);
-  profile.classList.remove("hidden");
+  if(id == ""){
+    alert("Entre your GIthub username!");
+    return;
+  }
+  else{
+
+    run_api(id);
+  }
 }
 
 function run_api(id){
@@ -34,8 +47,19 @@ function run_api(id){
   let getdata1 = async ()=>{
   let request = await fetch(profile_link);
   let data = await request.json();
+
   console.log(data);
-  data_feach(data);
+
+  if(data.status == 404){
+    alert("Gihtub username is wrong!");
+    return;
+  }
+  else{
+
+    data_feach(data);
+  profile.classList.remove("hidden");
+
+  }
 }
   
 getdata1();
