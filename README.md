@@ -84,6 +84,26 @@ A weather app using the OpenWeather API to show live weather data.
 
 <hr>
 
+
+<h2>🐙 GitHub Profile Viewer</h2>
+
+<p>
+   A web app to search and view GitHub profiles with their repositories.
+</p>
+
+<ul>
+  <li>Search any GitHub user by username.</li>
+  <li>Shows profile details: avatar, name, bio, followers, following, and repo count.</li>
+  <li>Displays top 3 repositories of the user.</li>
+  <li>Responsive and clean dark-themed UI.</li>
+</ul>
+
+<p>
+  <a href="https://githubprofile-eta.vercel.app/" target="_blank">🔗 Live Demo</a>
+</p>
+
+<hr>
+
 <h2>📌 Purpose</h2>
 <p>
 These projects were built to strengthen my frontend development skills:
